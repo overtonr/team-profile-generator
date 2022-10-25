@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Team Profile Generator</title>
+    <title>Team Profile</title>
 </head>
 <body>
     <header class="navbar navbar-light justify-content-center">
-        <h1 class="navbar-brand text-light mb-0">team profile generator</h1>
+        <h1 class="navbar-brand text-light mb-0">team profile</h1>
     </header>
 <main class="container-fluid d-flex justify-content-around">
     <div class="row">
     <div class="card rounded col-sm-8 col-xl-3 col-lg-4 p-4 m-4" style="width: 25rem;">
         <div class="card-header"><strong>
-        manager : ${answer.name}
+        manager ☕︎: ${answer.name}
         </strong></div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${answer.id}</li>
-          <li class="list-group-item">email: ${answer.email}</li>
+          <li class="list-group-item">email: <a href = mailto:${answer.email}>${answer.email}</a></li>
           <li class="list-group-item">office #: ${answer.office-num}</li>
         </ul>
       </div>
       <div class="card rounded col-sm-8 col-xl-3 col-lg-4 p-4 m-4" style="width: 25rem;">
         <div class="card-header"><strong>
-        engineer : ${answer.name}
+        engineer 👓 : ${answer.name}
         </strong></div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${answer.id}</li>
-          <li class="list-group-item">email: ${answer.email}</li>
+          <li class="list-group-item">email: <a href = mailto:${answer.email}>${answer.email}</a></li>
           <li class="list-group-item">github: ${answer.github}</li>
         </ul>
       </div>
       <div class="card rounded col-sm-8 col-xl-3 col-lg-4 p-4 m-4" style="width: 25rem;">
         <div class="card-header"><strong>
-        intern : ${answer.name}
+        intern 🎓: ${answer.name}
         </strong></div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${answer.id}</li>
-          <li class="list-group-item">email: ${answer.email}</li>
+          <li class="list-group-item">email:<a href = mailto:${answer.email}>${answer.email}</a></li>
           <li class="list-group-item">school #: ${answer.shcool}</li>
         </ul>
       </div>
