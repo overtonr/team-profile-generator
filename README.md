@@ -3,6 +3,7 @@
 ## Description
 Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## User Story
 
 ```md
@@ -33,8 +34,11 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-
-
+construct an object that contains the choice of the role : engineer, intern, manager
+they are all employees: class activity 23
+extending from employee class
+inquirer for each employee
+place to store the profile for each employee... then creat and append cards for each employee : called when finish team function is called
 
 ## Table of Contents
 ---
