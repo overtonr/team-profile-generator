@@ -1,10 +1,10 @@
-const employeeJS = require('../lib/employee');
+const Employee = require('../lib/employee');
 //can an object be created from the class
 //every property assigned to class: return;
 //every method in the class
 //mock data returns: test passed
-
-describe('employeeJS',() => {
+//npm run test
+describe('Employee',() => {
     it('Should return the object of the employee profile', () => {
         const newEmployee = new Employee("Rebecca",01,"rebecca@gmail.com");
         expect(newEmployee.getName()).toEqual("Rebecca");
