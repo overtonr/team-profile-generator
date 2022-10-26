@@ -99,15 +99,35 @@ function managerBuild(){
     if(response.menu === "Add an engineer"){
         engineerBuild();
     } else if(response.menu === "Add an intern"){
-        internBuild
+        internBuild();
 //finish build option selected: generate HTML
     } else (completeTeam())
     })
 };
 
-function engineerBuild();
+function engineerBuild(){
+    inquirer.prompt(engineerQs).then(answers => {
+    const engineerObj = new Engineer(response.name,);
+    employeeObjs.push(engineerObj);
+    if(response.menu === "Add an engineer"){
+        engineerBuild();
+    } else if(response.menu === "Add an intern"){
+        internBuild();
+    } else (completeTeam())
+    })
+};
 
-function internBuild();
+function internBuild(){
+    inquirer.prompt(internQs).then(answers => {
+    const internObj = new Intern(response.name,);
+    employeeObjs.push(internObj);
+    if(response.menu === "Add an engineer"){
+        engineerBuild();
+    } if(response.menu === "Add an intern"){
+        internBuild();
+    } else (completeTeam())
+    })
+};
 
 function completeTeam(); //called when user selects option to complete team profile
 
