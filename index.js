@@ -95,7 +95,13 @@ function managerBuild(){
     const managerObj = new Manager(response.name,);
 //new object is pushed to the array
     employeeObjs.push(managerObj);
-//if function: determines what comes next depending on selection from menu list   
+//if function: determines what comes next depending on selection from menu list 
+    if(response.menu === "Add an engineer"){
+        engineerBuild();
+    } else if(response.menu === "Add an intern"){
+        internBuild
+//finish build option selected: generate HTML
+    } else (completeTeam())
     })
 };
 
