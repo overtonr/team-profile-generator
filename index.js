@@ -92,7 +92,7 @@ function managerBuild(){
 //function calls package populating with the questions specific for the manager
     inquirer.prompt(managerQs).then(answers => {
 //constructs a new object with the responses from the prompt
-    const managerObj = new Manager(response.name,);
+    const managerObj = new Manager(response.name, response.id, response.email, response.officeNum);
 //new object is pushed to the array
     employeeObjs.push(managerObj);
 //if function: determines what comes next depending on selection from menu list 
@@ -129,7 +129,7 @@ function internBuild(){
     })
 };
 
-function completeTeam(); //called when user selects option to complete team profile
+//function completeTeam(); //called when user selects option to complete team profile
 
 var employeeObjs = [];
 //need an empty array where constructed objects can be pushed
@@ -137,8 +137,8 @@ var employeeObjs = [];
 //different array for each type of employee?
 
 function init(){
-    //should start with manager inquirer prompts
-    managerBuild()
+    // should start with manager inquirer prompts
+    managerBuild();
 };
 
 init();
