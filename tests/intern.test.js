@@ -1,4 +1,4 @@
-const Intern = require("../lib/intern");
+const Intern = require("../lib/intern.js");
 
 describe('Intern', () => {
     it('Should return the object of the employee profile, add the school, and update the role', () => {

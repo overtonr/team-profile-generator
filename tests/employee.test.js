@@ -1,4 +1,4 @@
-const Employee = require('../lib/employee');
+const Employee = require('../lib/employee.js');
 //can an object be created from the class
 //every property assigned to class: return;
 //every method in the class

@@ -1,4 +1,4 @@
-const Engineer = require("../lib/engineer");
+const Engineer = require("../lib/engineer.js");
 
 describe('Engineer', () => {
     it('Should return the object of the employee profile, add the github, and update the role', () => {
